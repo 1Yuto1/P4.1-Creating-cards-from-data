@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Marvel Heroes</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background-color: #1a1a2e;
+        color: #eee;
+      }
+      header {
+        background: linear-gradient(135deg, #e62429 0%, #8b0000 100%);
+        padding: 2rem 0;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      header h1 {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .hero-card {
+        background-color: #16213e;
+        border: 1px solid #0f3460;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+        height: 100%;
+      }
+      .hero-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(230, 36, 41, 0.4);
+      }
+      .hero-card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: top;
+      }
+      .hero-card .card-body {
+        padding: 1rem;
+      }
+      .hero-card .card-title {
+        color: #e62429;
+        font-weight: bold;
+      }
+      .hero-card .card-text {
+        color: #ccc;
+        font-size: 0.85rem;
+        min-height: 60px;
+      }
+      .badge-count {
+        background-color: #0f3460;
+        color: #eee;
+        margin-right: 4px;
+      }
+      .no-description {
+        color: #777;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Marvel Heroes</h1>
+      <p class="text-white-50 mb-0">Characters from the Marvel API</p>
+    </header>
+
+    <main class="container">
+      <div class="row g-4" id="cards-container">
+        <!-- Cards will be inserted here by JavaScript -->
+      </div>
+    </main>
+
+    <footer class="text-center py-4 text-muted">
+      <small>Data provided by Marvel. © 2024 MARVEL</small>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./jspractica.js"></script>
+  </body>
+</html>
